@@ -6,7 +6,8 @@ COPY scripts /opt/bitbots_scripts
 RUN apt-get update; \
     apt-get install -y python-catkin-tools python-catkin-pkg ros-melodic-catkin
 
-RUN mkdir -p /catkin_ws/src; cd /catkin_ws; \
+RUN echo $SHELL \
+    mkdir -p /catkin_ws/src; cd /catkin_ws; \
     catkin init; \
     catkin config \
         -DPYTHON_EXECUTABLE=/usr/bin/python3 \
