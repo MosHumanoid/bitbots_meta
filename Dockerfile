@@ -1,9 +1,8 @@
 # Use upstream melodic images as base
 FROM ros:melodic-ros-base-bionic AS bitbots-builder
 
-COPY scripts /opt/bitbots_scripts
-
 RUN apt-get update; \
+    apt-get remove -y python-catkin-tools python-catkin-pgk; \
     apt-get install -y python3-catkin-tools python3-catkin-pkg ros-melodic-catkin
 
 RUN . /opt/ros/melodic/setup.sh; \
@@ -14,3 +13,5 @@ RUN . /opt/ros/melodic/setup.sh; \
         -DPYTHON_INCLUDE_DIR=/usr/include/python3.7m \
         -DPYTHON_LIBRARY=/usr/lib/libpython3.7m.so; \
     catkin build;
+
+COPY scripts /opt/bitbots_scripts
