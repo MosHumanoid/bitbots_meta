@@ -11,8 +11,8 @@ RUN apt-get update; \
 
 # Setup permissions for rosdep
 RUN apt-get install -y sudo; \
-    groupadd -g $gid builder; \
-    useradd -M -u $uid -g $gid builder; \
+    echo "Group = $gid"; groupadd -g $gid builder; \
+    echo "User = $uid"; useradd -M -u $uid -g $gid builder; \
     echo "$uid   ALL= NOPASSWD:  /usr/bin/rosdep *" >> /etc/sudoers
 
 # Setup catkin workspace
