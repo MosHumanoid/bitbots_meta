@@ -27,7 +27,8 @@ RUN . /opt/ros/melodic/setup.sh; \
     chmod -R 777 /catkin_ws;
 
 # Configure entrypoint
-RUN echo "source /opt/ros/$ROS_DISTRO/setup.bash" > /ros_entrypoint.sh; \
+RUN echo "#!/bin/bash" > /ros_entrypoint.sh; \
+    echo "source /opt/ros/$ROS_DISTRO/setup.bash" >> /ros_entrypoint.sh; \
     echo "source /catkin_ws/devel/setup.bash" >> /ros_entrypoint.sh; \
     echo "exec \"$@\"" >> /ros_entrypoint.sh;
 
