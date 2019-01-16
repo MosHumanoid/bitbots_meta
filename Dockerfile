@@ -4,7 +4,7 @@ FROM ros:melodic-ros-core AS bitbots-builder
 COPY scripts /opt/bitbots_scripts
 
 RUN apt-get update; \
-    apt-get install -y python-catkin-tools
+    apt-get install -y python-catkin-tools python-catkin-pkg ros-melodic-catkin
 
 RUN mkdir -p /catkin_ws/src; cd /catkin_ws; \
     catkin init; \
