@@ -21,8 +21,8 @@ RUN . /opt/ros/melodic/setup.sh; \
     catkin init; \
     catkin config \
         -DPYTHON_EXECUTABLE=/usr/bin/python3 \
-        -DPYTHON_INCLUDE_DIR=/usr/include/python3.7m \
-        -DPYTHON_LIBRARY=/usr/lib/libpython3.7m.so; \
+        -DPYTHON_INCLUDE_DIR=/usr/include/python3.6m \
+        -DPYTHON_LIBRARY=/usr/lib/python3.6/config-3.6m-x86_64-linux-gnu/libpython3.6m.so; \
     catkin build; \
     chmod -R 777 /catkin_ws;
 
