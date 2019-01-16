@@ -1,5 +1,5 @@
 # Use upstream melodic images as base
-FROM ros:melodic-ros-core AS bitbots-builder
+FROM ubuntu:bionic AS bitbots-builder
 
 COPY scripts /opt/bitbots_scripts
 
