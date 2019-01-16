@@ -30,7 +30,7 @@ RUN . /opt/ros/melodic/setup.sh; \
 RUN echo "#!/bin/bash" > /ros_entrypoint.sh; \
     echo "source /opt/ros/$ROS_DISTRO/setup.bash" >> /ros_entrypoint.sh; \
     echo "source /catkin_ws/devel/setup.bash" >> /ros_entrypoint.sh; \
-    echo "exec bash \"$@\"" >> /ros_entrypoint.sh;
+    echo "exec /usr/bin/bash \"$@\"" >> /ros_entrypoint.sh;
 
 # Add our scripts for convenience
 #COPY scripts /opt/bitbots_scripts
