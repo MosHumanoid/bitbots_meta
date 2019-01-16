@@ -13,6 +13,7 @@ RUN . /opt/ros/melodic/setup.sh; \
         -DPYTHON_EXECUTABLE=/usr/bin/python3 \
         -DPYTHON_INCLUDE_DIR=/usr/include/python3.7m \
         -DPYTHON_LIBRARY=/usr/lib/libpython3.7m.so; \
-    catkin build;
+    catkin build; \
+    chmod -R 777 /catkin_ws;
 
 COPY scripts /opt/bitbots_scripts
