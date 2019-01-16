@@ -24,7 +24,12 @@ RUN . /opt/ros/melodic/setup.sh; \
         -DPYTHON_INCLUDE_DIR=/usr/include/python3.6m \
         -DPYTHON_LIBRARY=/usr/lib/python3.6/config-3.6m-x86_64-linux-gnu/libpython3.6m.so; \
     catkin build; \
-    chmod -R 777 /catkin_ws;
+    chmod -R 777 /catkin_ws; \
+    cat > /ros_entrypoint.sh <<EOF \
+        source /opt/ros/$ROS_DISTRO/setup.bash; \
+        source /catkin_ws/devel/setup.bash; \
+        exec $@
+EOF
 
 # Add our scripts for convenience
 #COPY scripts /opt/bitbots_scripts
