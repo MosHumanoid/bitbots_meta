@@ -2,7 +2,7 @@
 FROM ros:melodic-ros-base-bionic AS bitbots-builder
 
 RUN apt-get update; \
-    apt-get remove -y python-catkin-tools python-catkin-pgk; \
+    apt-get remove -y python-catkin-tools; \
     apt-get install -y python3-catkin-tools python3-catkin-pkg ros-melodic-catkin
 
 RUN . /opt/ros/melodic/setup.sh; \
