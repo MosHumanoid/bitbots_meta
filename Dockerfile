@@ -7,7 +7,7 @@ ARG gid=1001
 # Install system dependencies
 RUN apt-get update; \
     apt-get install -y python3-pip; \
-    python3 -m pip install catkin-tools catkin-pkg trollius
+    python3 -m pip install catkin-tools catkin-pkg trollius coverage
 
 # Setup permissions for rosdep
 RUN apt-get install -y sudo; \
