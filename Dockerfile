@@ -1,8 +1,5 @@
 # Use upstream melodic images as base
-FROM ubuntu:bionic AS bitbots-builder
-
-RUN echo "deb http://packages.ros.org/ros/ubuntu bionic main" > /etc/apt/sources.list.d/ros-final.list; \
-    apt-key adv --keyserver hkp://ha.pool.sks-keyservers.net:80 --recv-key 5523BAEEB01FA116
+FROM ros:melodic-ros-base-bionic AS bitbots-builder
 
 COPY scripts /opt/bitbots_scripts
 
