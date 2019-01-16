@@ -1,6 +1,9 @@
 # Use upstream melodic images as base
 FROM ros:melodic-ros-base-bionic AS bitbots-builder
 
+ARG uid=1001
+ARG gid=1001
+
 # Install system dependencies
 RUN apt-get update; \
     apt-get install -y python3-pip; \
@@ -8,7 +11,9 @@ RUN apt-get update; \
 
 # Setup permissions for rosdep
 RUN apt-get install -y sudo; \
-    echo "ALL   ALL= NOPASSWD:  /usr/bin/rosdep *" >> /etc/sudoers
+    groupadd -g $gid builder; \
+    useradd -M -u $uid -g $gid builder; \
+    echo "$uid   ALL= NOPASSWD:  /usr/bin/rosdep *" >> /etc/sudoers
 
 # Setup catkin workspace
 RUN . /opt/ros/melodic/setup.sh; \
