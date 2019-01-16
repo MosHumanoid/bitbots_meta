@@ -28,7 +28,7 @@ RUN . /opt/ros/melodic/setup.sh; \
     cat > /ros_entrypoint.sh <<EOF \
         source /opt/ros/$ROS_DISTRO/setup.bash; \
         source /catkin_ws/devel/setup.bash; \
-        exec $@
+        exec $@; \
 EOF
 
 # Add our scripts for convenience
