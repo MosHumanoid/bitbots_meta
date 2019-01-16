@@ -3,5 +3,5 @@ FROM ros:melodic-ros-core
 
 COPY scripts /opt/bitbots_scripts
 
-RUN RUN apt-get update; \
+RUN apt-get update; \
     apt-get install -y python-catkin-tools
