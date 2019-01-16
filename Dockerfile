@@ -7,6 +7,7 @@ RUN apt-get update; \
     apt-get install -y python-catkin-tools python-catkin-pkg ros-melodic-catkin
 
 RUN source /opt/ros/melodic/setup.sh; \
+    ls /opt/ros/melodic; \
     mkdir -p /catkin_ws/src; cd /catkin_ws; \
     catkin init; \
     catkin config \
