@@ -13,7 +13,7 @@ RUN apt-get update; \
 RUN apt-get install -y sudo; \
     echo "Group = $gid"; groupadd -g $gid builder; \
     echo "User = $uid"; useradd -M -u $uid -g $gid builder; \
-    echo "$uid   ALL=(ALL) NOPASSWD: ALL" >> /etc/sudoers
+    echo "builder   ALL=(ALL) NOPASSWD: ALL" >> /etc/sudoers
 
 # Setup catkin workspace
 RUN . /opt/ros/melodic/setup.sh; \
