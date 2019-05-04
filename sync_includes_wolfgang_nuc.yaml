@@ -1,4 +1,6 @@
 include:
+    - wolves_image_provider:
+        - image_provider
     - bitbots_behavior:
         - bitbots_blackboard
         - bitbots_body_behavior
