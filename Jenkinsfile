@@ -7,12 +7,6 @@ pipeline {
 
     stages {
         stage('Build documentation') {
-		when {
-			allOf {
-				branch 'master'
-			}
-			beforeAgent true
-		}
         agent { docker image: 'bitbots_builder', registryUrl: 'http://registry.bit-bots.de:5000' }
         steps {
             sh './scripts/build-doc.py --meta -v'
@@ -24,6 +18,12 @@ pipeline {
         agent {
             label 'webserver'
         }
+		when {
+			allOf {
+				branch 'master'
+			}
+			beforeAgent true
+		}
         steps {
             unstash 'html'
 			sh 'rsync --delete -v -r ./doc/_build/ /srv/data/doku.bit-bots.de/meta/'
