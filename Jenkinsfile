@@ -1,6 +1,13 @@
 pipeline {
     agent none
 
+	when {
+		allOf {
+			branch 'master'
+		}
+		beforeAgent true
+	}
+
 	triggers {
 		cron 'H 6 * * * '
 	}
