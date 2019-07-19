@@ -1,19 +1,18 @@
 pipeline {
     agent none
 
-	when {
-		allOf {
-			branch 'master'
-		}
-		beforeAgent true
-	}
-
 	triggers {
 		cron 'H 6 * * * '
 	}
 
     stages {
         stage('Build documentation') {
+		when {
+			allOf {
+				branch 'master'
+			}
+			beforeAgent true
+		}
         agent { docker image: 'bitbots_builder', registryUrl: 'http://registry.bit-bots.de:5000' }
         steps {
             sh './scripts/build-doc.py --meta -v'
