@@ -4,76 +4,76 @@
 	branch = lunar-devel
 [submodule "lib/bio_ik"]
 	path = lib/bio_ik
-	url = git@github.com:b51/bio_ik.git
+	url = https://github.com/b51/bio_ik.git
 [submodule "lib/DynamixelSDK"]
 	path = lib/DynamixelSDK
-	url = git@github.com:b51/DynamixelSDK.git
+	url = https://github.com/b51/DynamixelSDK.git
 [submodule "lib/dynamixel-workbench"]
 	path = lib/dynamixel-workbench
-	url = git@github.com:b51/dynamixel-workbench.git
+	url = https://github.com/b51/dynamixel-workbench.git
 [submodule "lib/dynamixel-workbench-msgs"]
 	path = lib/dynamixel-workbench-msgs
 	url = https://github.com/b51/dynamixel-workbench-msgs.git
 [submodule "lib/bio_ik_service"]
 	path = lib/bio_ik_service
-	url = git@github.com:b51/bio_ik_service.git
+	url = https://github.com/b51/bio_ik_service.git
 [submodule "dynamic_stack_decider"]
 	path = dynamic_stack_decider
-	url = git@github.com:b51/dynamic_stack_decider.git
+	url = https://github.com/b51/dynamic_stack_decider.git
 [submodule "center_of_mass"]
 	path = center_of_mass
-	url = git@github.com:b51/center_of_mass.git
+	url = https://github.com/b51/center_of_mass.git
 [submodule "humanoid_base_footprint"]
 	path = humanoid_base_footprint
-	url = git@github.com:b51/humanoid_base_footprint.git
+	url = https://github.com/b51/humanoid_base_footprint.git
 [submodule "bitbots_lowlevel"]
 	path = bitbots_lowlevel
-	url = git@github.com:b51/bitbots_lowlevel.git
+	url = https://github.com/b51/bitbots_lowlevel.git
 [submodule "bitbots_navigation"]
 	path = bitbots_navigation
-	url = git@github.com:b51/bitbots_navigation.git
+	url = https://github.com/b51/bitbots_navigation.git
 [submodule "bitbots_motion"]
 	path = bitbots_motion
-	url = git@github.com:b51/bitbots_motion.git
+	url = https://github.com/b51/bitbots_motion.git
 [submodule "davros_robot"]
 	path = davros_robot
-	url = git@github.com:b51/davros_robot.git
+	url = https://github.com/b51/davros_robot.git
 [submodule "bitbots_behavior"]
 	path = bitbots_behavior
-	url = git@github.com:b51/bitbots_behavior.git
+	url = https://github.com/b51/bitbots_behavior.git
 [submodule "humanoid_league_visualization"]
 	path = humanoid_league_visualization
-	url = git@github.com:b51/humanoid_league_visualization.git
+	url = https://github.com/b51/humanoid_league_visualization.git
 [submodule "bitbots_misc"]
 	path = bitbots_misc
-	url = git@github.com:b51/bitbots_misc.git
+	url = https://github.com/b51/bitbots_misc.git
 [submodule "humanoid_league_misc"]
 	path = humanoid_league_misc
-	url = git@github.com:b51/humanoid_league_misc.git
+	url = https://github.com/b51/humanoid_league_misc.git
 [submodule "wolfgang_robot"]
 	path = wolfgang_robot
-	url = git@github.com:b51/wolfgang_robot.git
+	url = https://github.com/b51/wolfgang_robot.git
 [submodule "bitbots_vision"]
 	path = bitbots_vision
-	url = git@github.com:b51/bitbots_vision.git
+	url = https://github.com/b51/bitbots_vision.git
 [submodule "humanoid_league_msgs"]
 	path = humanoid_league_msgs
-	url = git@github.com:b51/humanoid_league_msgs.git
+	url = https://github.com/b51/humanoid_league_msgs.git
 [submodule "wolves_image_provider"]
 	path = wolves_image_provider
-	url = git@github.com:b51/wolves_image_provider.git
+	url = https://github.com/b51/wolves_image_provider.git
 [submodule "bitbots_msgs"]
 	path = bitbots_msgs
-	url = git@github.com:b51/bitbots_msgs.git
+	url = https://github.com/b51/bitbots_msgs.git
 [submodule "udp_bridge"]
 	path = udp_bridge
-	url = git@github.com:b51/udp_bridge.git
+	url = https://github.com/b51/udp_bridge.git
 [submodule "lib/dwa_local_planner"]
 	path = lib/dwa_local_planner
-	url = git@github.com:b51/dwa_local_planner.git
+	url = https://github.com/b51/dwa_local_planner.git
 [submodule "lib/vision_opencv"]
 	path = lib/vision_opencv
-	url = git@github.com:b51/vision_opencv.git
+	url = https://github.com/b51/vision_opencv.git
     branch = melodic
 [submodule "lib/DspSDK"]
 	path = lib/DspSDK
