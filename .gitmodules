@@ -76,5 +76,5 @@
 	url = https://github.com/b51/vision_opencv.git
     branch = melodic
 [submodule "lib/DspSDK"]
-	path = lib/DspSDK
+	path = lib/dsp_sdk
 	url = https://github.com/b51/DspSDK
