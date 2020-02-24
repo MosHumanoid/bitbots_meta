@@ -1,12 +1,11 @@
 #!/usr/bin/bash
 
-"""
-make sure you have already install ros-melodic
-if not, try to do that by following instructions from internet
-"""
+# make sure you have already install ros-melodic
+# if not, try to do that by following instructions from internet
 
 
 # run in your own catkin/src
+
 
 # clone simulation and testing project
 
