@@ -38,9 +38,6 @@
 [submodule "davros_robot"]
 	path = davros_robot
 	url = https://github.com/MosHumanoid/davros_robot.git
-[submodule "bitbots_behavior"]
-	path = bitbots_behavior
-	url = git@github.com:MosHumanoid/bitbots_behavior-1.git
 [submodule "humanoid_league_visualization"]
 	path = humanoid_league_visualization
 	url = https://github.com/MosHumanoid/humanoid_league_visualization.git
@@ -78,3 +75,6 @@
 [submodule "lib/dsp_sdk"]
 	path = lib/dsp_sdk
 	url = https://github.com/MosHumanoid/dsp_sdk
+[submodule "bitbots_behavior-1"]
+	path = bitbots_behavior-1
+	url = git@github.com:MosHumanoid/bitbots_behavior-1.git
