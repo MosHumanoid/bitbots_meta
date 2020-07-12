@@ -40,7 +40,7 @@
 	url = https://github.com/MosHumanoid/davros_robot.git
 [submodule "bitbots_behavior"]
 	path = bitbots_behavior
-	url = https://github.com/MosHumanoid/bitbots_behavior.git
+	url = git@github.com:MosHumanoid/bitbots_behavior-1.git
 [submodule "humanoid_league_visualization"]
 	path = humanoid_league_visualization
 	url = https://github.com/MosHumanoid/humanoid_league_visualization.git
